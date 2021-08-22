@@ -55,8 +55,8 @@ This bot can mirror all your links to Google Drive!
 Type /{BotCommands.HelpCommand} to get a list of available commands
 '''
     buttons = button_build.ButtonMaker()
-    buttons.buildbutton("Channel", f"{CHANNEL_LINK}")
-    buttons.buildbutton("Support Group", f"{SUPPORT_LINK}")
+    buttons.buildbutton("Channel", f"{t.me/Teammoviezcinemas}")
+    buttons.buildbutton("Support Group", f"{t.me/WarisZone}")
     reply_markup = InlineKeyboardMarkup(buttons.build_menu(2))
     LOGGER.info('UID: {} - UN: {} - MSG: {}'.format(update.message.chat.id, update.message.chat.username, update.message.text))
     uptime = get_readable_time((time.time() - botStartTime))
